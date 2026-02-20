@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+<script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<title>Intramurals Team Checker</title>
+
+<style>
+body {
+    background: linear-gradient(#1e7f43, #1f4ed8, #facc15, #dc2626);
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    width: 900px;
+    padding: 25px;
+    margin: 40px auto;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+
+#output {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+<h1 class="text-center">🏆 Account Creator</h1>
+<form>
+  <center><label for="name">Name</label><br>
+  <input type="text" id="name" name="n4me"><br>
+  <label for="pass">Password</label><br>
+  <input type="text" id="pass" name="p4ss">
+  <br>
+  <br>
+ <button type="button" py-click="SIGNUP" id="SIGNup">
+    Sign up
+</button> <center>
+</form>
+<div id="output"></div>
+<py-script src="main.py"></py-script>
+</div>
+</body>
